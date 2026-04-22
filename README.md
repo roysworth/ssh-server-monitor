@@ -8,6 +8,24 @@ A Python script that connects to a remote Linux server over SSH and reports syst
 - Displays a clean, formatted health report
 - Uses environment variables for credentials (no hardcoded secrets)
 
+## Specifications
+
+vCPUs: 2 (shared) . It uses a fraction of a physical core (0.25-0.5 cores) .
+
+Memory: 1 GB 
+
+Architecture: x86_64 (supports both Intel and AMD CPUs) 
+
+CPU Frequency: 2.25 GHz (base) / 2.7 GHz (turbo) 
+
+Performance & Limits
+
+Network Bandwidth: Up to 1 Gbps 
+
+Max Disk Size: 30 GB (free tier limit) or up to 3 TB (theoretically) 
+
+Burstable CPU: Yes 
+
 ## Technologies Used
 - Python 3
 - Paramiko (SSH library)
