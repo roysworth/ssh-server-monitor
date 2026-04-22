@@ -31,19 +31,19 @@ A Python script that connects to a remote Linux server over SSH and reports syst
    source venv/bin/activate   # On Windows: .\venv\Scripts\activate
    Install dependencies
 
-bash
-pip install -r requirements.txt
-Set environment variables (PowerShell example)
+   bash
+   pip install -r requirements.txt
+   Set environment variables (PowerShell example)
 
-powershell
-$env:VM_IP = "your.server.ip"
-$env:VM_USER = "your_username"
-$env:VM_SSH_KEY = @"
------BEGIN OPENSSH PRIVATE KEY-----
-...your private key...
------END OPENSSH PRIVATE KEY-----
-"@
-```
+   powershell
+   $env:VM_IP = "your.server.ip"
+   $env:VM_USER = "your_username"
+   $env:VM_SSH_KEY = @"
+   -----BEGIN OPENSSH PRIVATE KEY-----
+   ...your private key...
+   -----END OPENSSH PRIVATE KEY-----
+   "@
+   ```
 3. **Install dependencies**
 
 bash
