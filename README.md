@@ -25,7 +25,6 @@ A Python script that connects to a remote Linux server over SSH and reports syst
    cd ssh-server-monitor
 
 2. **Create and activate a virtual environment**
-
   ```bash
    python -m venv venv
    source venv/bin/activate   # On Windows: .\venv\Scripts\activate
@@ -45,13 +44,11 @@ A Python script that connects to a remote Linux server over SSH and reports syst
    "@
    ```
 3. **Install dependencies**
-
-bash
-pip install -r requirements.txt
-
+```bash
+   pip install -r requirements.txt
+```
 4. **Set environment variables (PowerShell example)**
-
-powershell
+```powershell
 $env:VM_IP = "your.server.ip"
 $env:VM_USER = "your_username"
 $env:VM_SSH_KEY = @"
@@ -59,10 +56,9 @@ $env:VM_SSH_KEY = @"
 ...your private key...
 -----END OPENSSH PRIVATE KEY-----
 "@
-
-5. Run the monitor
-
-bash
+```
+5. **Run the monitor**
+```bash
 python monitor.py
 
 Connecting to 8.230.114.131 as roysworth...
